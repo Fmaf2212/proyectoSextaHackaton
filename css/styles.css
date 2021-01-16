@@ -1,0 +1,357 @@
+nav{
+    padding: 0 100px;
+    box-shadow: none;
+    height: 64px;
+}
+
+nav a {
+    color: black;
+}
+
+.nav-wrapper img{
+    height: -webkit-fill-available;
+}
+
+.nav-wrapper ul li a{
+    color: black;
+}
+
+.container-1{
+    width: 100%;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+}
+
+.container-1 input#search{
+    width: 100%;
+    height: 50px;
+    background: #F4F4F4;
+    border: none;
+    font-size: 14px;
+    float: right;
+    color: #63717f;
+    padding-left: 45px;
+    border-radius: 5px;
+}
+
+.container-1 i{
+    position: absolute;
+    left: 10px;
+    top: 13px;
+}
+
+
+.section-info{
+    display: flex;
+}
+
+.section-info .bloqueInfo .bloqueInferiorArticle{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.popular .section-info img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-info .bloqueInfo .bloqueInferiorArticle .info{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+
+.section-info-bottom{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.section-info-bottom .bloqueInfo .bloqueInferiorArticle{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.section-info-bottom .bloqueInfo .bloqueInferiorArticle .info{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+
+
+
+.all-article .section-info{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.all-article .section-info .bloqueInfo{
+    margin-left: 30px;
+}
+
+.all-article .section-info .bloqueInfo h5{
+    margin-left: 30px;
+}
+
+.all-article .section-info .bloqueInfo .bloqueInferiorArticle{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+
+.all-article .section-info .bloqueInfo .bloqueInferiorArticle .info{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.all-article .section .old-new{
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-article .section .old-new a{
+    display: flex;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+
+.intersted{
+    background-color: #316099;
+    height: 350px;
+    width: 100%;
+    border-radius: 0 150px 0 0;
+    display: flex;
+}
+
+.intersted .interstedTexto{
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intersted .interstedTexto h2{
+    font-size: 35px;
+    font-weight: 100;
+    padding-right: 240px;
+    margin-bottom: 30px;
+}
+
+.intersted .interstedTexto p{
+    font-weight: 100;
+    color: #ADBFD6;
+    line-height: 1.5;
+}
+
+.intersted .interstedButton{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.intersted .interstedButton button{
+    background: #5A98D0;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+/*-------------------------FOOTER-------------------------------*/
+
+footer{
+    background-color: #316099;
+    color: white;
+    padding: 60px 0;
+}
+
+footer .footerContenido{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer .footerContenido a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .footerContenido .bloqueFooter1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .footerContenido .bloqueFooter1 .bloqueFooter1Hijos{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footerContenido .bloqueFooter1 .bloqueFooter1Hijos:nth-child(1){
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer .footerContenido .bloqueFooter2,.bloqueFooter3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+}
+
+footer .footerContenido .bloqueFooter2 a:nth-child(1) {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer .footerContenido .bloqueFooter3 a:nth-child(1) {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer .copyright{
+    margin-top: 60px;
+    text-align: center;
+    color: #83A0C2;
+}
+
+
+/*-------------------------------------------RESPONSIVE-----------------------------------------------*/
+
+@media (max-width: 1201px){
+    .section-info-top{
+        display: block;
+    }
+
+    .intersted .interstedTexto h2 {
+        padding-right: 0;
+    }
+
+    footer .footerContenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        padding: 0;
+    }
+    footer .copyright {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 993px){
+    .all-article .section-info {
+        flex-direction: column;
+    }
+    .all-article .section-info .bloqueInfo {
+        margin-left: 0;
+    }
+    .all-article .section-info .bloqueInfo h5 {
+        margin-left: 0;
+    }
+
+    .intersted .container .section .row{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .intersted .interstedTexto h2 {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .intersted .interstedTexto p {
+        text-align: center;
+    }
+
+    .intersted .interstedButton {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 601px){
+    nav {
+        padding: 0;
+    }
+
+    nav .brand-logo {
+        left: 90%;
+    }
+
+    .no-pad-bot .container h1{
+        font-size: 2em;
+    }
+
+    .no-pad-bot .container .row h5{
+        font-size: 1em;
+    }
+    
+    .popular .section .row:nth-child(3){
+        display: none;
+    }
+
+    .section-info-top .bloqueInfo h2 strong{
+        font-size: .7em;
+    }
+
+    .section-info-top .bloqueInfo h2{
+        margin: 0;
+    }
+
+    .section-info-bottom{
+        margin-top: 20px;
+    }
+
+    .all-article .section-info {
+        flex-direction: column-reverse;
+    }
+
+    .intersted .interstedTexto h2 {
+        text-align: start;
+    }
+
+    .intersted .interstedTexto p {
+        text-align: start;
+    }
+
+    footer .container .row .col {
+        padding: 0;
+    }
+
+    footer .footerContenido {
+        align-items: end;
+    }
+
+    footer .footerContenido .bloqueFooter1{
+        align-items: end;
+    }
+
+    footer .footerContenido .bloqueFooter1 .bloqueFooter1Hijos h2{
+        font-size: 2em;
+    }
+
+    footer .footerContenido .bloqueFooter1 .bloqueFooter1Hijos img{
+        width: 100px;
+    }
+
+    footer .footerContenido .bloqueFooter2, .bloqueFooter3 {
+        align-items: end;
+    }
+    
+}
